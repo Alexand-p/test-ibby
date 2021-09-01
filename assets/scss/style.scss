@@ -22,21 +22,45 @@
 @import "footer";
 *{
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 body{
   background-color: rgba(254, 201, 219,0.8);
+  font-family: 'Noto Sans JP', sans-serif;
 }
 a{
   text-decoration: none;
 }
+.under-head{
+  min-height: 100vh;
+  min-width: 100vw;
+  background-image:url(/assets/img/bg1.jpg);
+  background-repeat: no-repeat;
+  background-position:  50% 50%;
+  background-size: 100%;
+}
 .header{
   display: flex;
+  align-items: center;
+  justify-content: space-around;
   width: 100vw;
   height: 15vh;
   background-color: rgb(46, 20, 31);
-  align-items: center;
-  justify-content: center;
+  box-shadow: 0.4em 0.4em 5px rgba(122,122,122,0.5)
 }
 .header-logo,img{
 height: 80%;
+}
+.header-menu{
+  width: 40%;
+  height: 30%;
+  text-align: center;
+}
+.menu{
+  overflow-y: hidden;
+}
+.menu-item{
+  color: white;
+  margin-left: 20px;
+  
 }
