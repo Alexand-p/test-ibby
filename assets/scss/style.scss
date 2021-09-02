@@ -22,10 +22,10 @@
 @import "footer";
 *{
   box-sizing: border-box;
-  overflow-x: hidden;
+  overflow-x: hidden;  
 }
 body{
-  background-color: rgba(254, 201, 219,0.8);
+  background-color:$color-pink;
   font-family: 'Noto Sans JP', sans-serif;
 }
 a{
@@ -45,7 +45,7 @@ a{
   justify-content: space-around;
   width: 100vw;
   height: 15vh;
-  background-color: rgb(46, 20, 31);
+  background-color: $color-cap;
   box-shadow: 0.4em 0.4em 5px rgba(122,122,122,0.5)
 }
 .header-logo,img{
@@ -62,5 +62,14 @@ height: 80%;
 .menu-item{
   color: white;
   margin-left: 20px;
-  
+}
+.ingridients,
+.recept,
+.stories,
+.stories{ max-width: 1340px;
+  margin: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+  min-height: 1200px;
+  overflow: hidden;
 }
