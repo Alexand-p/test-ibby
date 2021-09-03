@@ -471,11 +471,10 @@ template {
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  overflow-x: hidden;
 }
 
 body {
-  background-color: #fee9f1;
+  background-color: #fff4f8;
   font-family: 'Noto Sans JP', sans-serif;
 }
 
@@ -483,7 +482,7 @@ a {
   text-decoration: none;
 }
 
-.under-head {
+.slider {
   min-height: 100vh;
   min-width: 100vw;
   background-image: url(/assets/img/bg1.jpg);
@@ -518,16 +517,12 @@ a {
   text-align: center;
 }
 
-.menu {
-  overflow-y: hidden;
-}
-
 .menu-item {
   color: white;
   margin-left: 20px;
 }
 
-.ingridients,
+.production,
 .recept,
 .stories,
 .stories {
@@ -537,4 +532,76 @@ a {
   padding-left: 20px;
   min-height: 1200px;
   overflow: hidden;
+}
+
+.production {
+  background-color: white;
+  margin-top: 20px;
+  -webkit-box-shadow: 0.4em 0.4em 5px rgba(122, 122, 122, 0.5);
+          box-shadow: 0.4em 0.4em 5px rgba(122, 122, 122, 0.5);
+}
+
+.production-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5px;
+  grid-template-areas: "p1 p2 p3" "p4 p5 p6";
+}
+
+.production-container__image {
+  height: 250px;
+  width: 200px;
+  position: relative;
+  overflow: hidden;
+}
+
+.production-container__image:hover {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  -o-transition: transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+.production-container__item {
+  height: 650px;
+  max-width: 450px;
+  margin: 5px;
+  text-align: center;
+}
+
+.production-container__item .image {
+  background-color: white;
+}
+
+.production-container__action {
+  color: #332725;
+  margin-bottom: 0px;
+}
+
+.production-container #11:nth-of-type(1) {
+  grid-area: p1;
+}
+
+.production-container #12:nth-of-type(2) {
+  grid-area: p2;
+}
+
+.production-container #13:nth-of-type(3) {
+  grid-area: p3;
+}
+
+.production-container #14:nth-of-type(4) {
+  grid-area: p4;
+}
+
+.production-container #15:nth-of-type(5) {
+  grid-area: p5;
+}
+
+.production-container #16:nth-of-type(6) {
+  grid-area: p6;
 }

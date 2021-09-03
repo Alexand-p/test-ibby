@@ -22,7 +22,6 @@
 @import "footer";
 *{
   box-sizing: border-box;
-  overflow-x: hidden;  
 }
 body{
   background-color:$color-pink;
@@ -31,7 +30,7 @@ body{
 a{
   text-decoration: none;
 }
-.under-head{
+.slider{
   min-height: 100vh;
   min-width: 100vw;
   background-image:url(/assets/img/bg1.jpg);
@@ -56,14 +55,16 @@ height: 80%;
   height: 30%;
   text-align: center;
 }
-.menu{
-  overflow-y: hidden;
-}
+// .menu{
+  
+// }
 .menu-item{
   color: white;
   margin-left: 20px;
-}
-.ingridients,
+} 
+
+// PRODUCTION
+.production,
 .recept,
 .stories,
 .stories{ max-width: 1340px;
@@ -72,4 +73,66 @@ height: 80%;
   padding-left: 20px;
   min-height: 1200px;
   overflow: hidden;
+}
+.production{
+  background-color: white;
+  margin-top: 20px ;
+  box-shadow: 0.4em 0.4em 5px rgba(122,122,122,0.5);
+  &-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr );
+    grid-gap: 5px;
+    grid-template-areas: "p1 p2 p3"
+                         "p4 p5 p6";
+               
+                         &__image{
+                          height: 250px;
+                          width: 200px;
+                          position: relative;
+                          overflow: hidden;
+                          &:hover{
+                            transform: scale(1.1);
+                            transition: transform 0.5s;
+                          }
+                        }
+                        
+&__item{
+  height: 650px;
+  max-width: 450px;
+  margin: 5px;
+  text-align: center;
+  // &:hover{
+  //   transition: background-color 0.5s;
+  // }
+  
+  .image{
+    background-color: white;
+    
+  }
+  
+}
+
+&__action{
+  color: $color-text;
+  margin-bottom: 0px;
+}
+#11:nth-of-type(1){
+  grid-area: p1;
+}
+#12:nth-of-type(2){
+ grid-area: p2;
+}
+#13:nth-of-type(3){
+ grid-area: p3;
+}
+#14:nth-of-type(4){
+ grid-area: p4;
+}
+#15:nth-of-type(5){
+ grid-area: p5;
+}
+#16:nth-of-type(6){
+ grid-area: p6;
+}
+}
 }
