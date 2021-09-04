@@ -277,7 +277,7 @@ html [type="button"],
   /* 2 */
 }
 
-button,
+/* button,
 [type="button"],
 [type="reset"],
 [type="submit"] {
@@ -287,7 +287,7 @@ button,
   /**
        * Restore the focus styles unset by the previous rule.
        */
-}
+*/
 
 button::-moz-focus-inner,
 [type="button"]::-moz-focus-inner,
@@ -514,27 +514,27 @@ template {
 
 .slider .slides__item:nth-of-type(1) {
   background-color: red;
-  background-image: url("/assets/img/bg1.jpg");
+  background-image: url("../img/bg1.jpg");
 }
 
 .slider .slides__item:nth-of-type(2) {
   background-color: orange;
-  background-image: url("/assets/img/callebaut.png");
+  background-image: url("../img/callebaut.png");
 }
 
 .slider .slides__item:nth-of-type(3) {
   background-color: green;
-  background-image: url("/assets/img/slide3.jpg");
+  background-image: url("../img/slide3.jpg");
 }
 
 .slider .slides__item:nth-of-type(4) {
   background-color: blue;
-  background-image: url("/assets/img/slide4.png");
+  background-image: url("../img/slide4.png");
 }
 
 .slider .slides__item:nth-of-type(5) {
   background-color: magenta;
-  background-image: url("/assets/img/slide5.png");
+  background-image: url("../img/slide5.png");
 }
 
 .slider .indicators {
@@ -653,7 +653,8 @@ template {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 5px;
-  grid-template-areas: "p1 p2 p3" "p4 p5 p6";
+  grid-template-areas: "p1 p2 p3"
+ "p4 p5 p6";
 }
 
 .production-container__image {
