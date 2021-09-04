@@ -277,7 +277,7 @@ html [type="button"],
   /* 2 */
 }
 
-/* button,
+button,
 [type="button"],
 [type="reset"],
 [type="submit"] {
@@ -287,7 +287,7 @@ html [type="button"],
   /**
        * Restore the focus styles unset by the previous rule.
        */
-*/
+}
 
 button::-moz-focus-inner,
 [type="button"]::-moz-focus-inner,
@@ -636,11 +636,46 @@ template {
   background: linear-gradient(to right, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0) 100%);
 }
 
+.tutorials-container__block {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 5px;
+  grid-template-areas: "t1 t1 " "t3 t2 " "t4 t5" "t7 t8" "t8 t8 ";
+}
+
 .tutorials-container__item {
-  border: 1px solid black;
   margin: 5px;
   padding: 20px;
   text-align: center;
+}
+
+.tutorials-container__item:hover {
+  -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-transition: -webkit-transform 0.8s;
+  transition: -webkit-transform 0.8s;
+  -o-transition: transform 0.8s;
+  transition: transform 0.8s;
+  transition: transform 0.8s, -webkit-transform 0.8s;
+  -webkit-box-shadow: 0.4em 0.4em 5px rgba(122, 122, 122, 0.5);
+          box-shadow: 0.4em 0.4em 5px rgba(122, 122, 122, 0.5);
+  background-color: #fedfe9;
+}
+
+.tutorials-container__titel {
+  font-size: 25px;
+}
+
+.tutorials-container__text {
+  font-family: 'Dancing Script', cursive;
+  font-size: 18px;
+}
+
+.tutorials-container__number {
+  font-size: 32px;
+  font-weight: 900;
+  font-family: 'Dancing Script', cursive;
 }
 
 .production {
@@ -653,8 +688,7 @@ template {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 5px;
-  grid-template-areas: "p1 p2 p3"
- "p4 p5 p6";
+  grid-template-areas: "p1 p2 p3" "p4 p5 p6";
 }
 
 .production-container__image {
@@ -784,4 +818,24 @@ a {
   padding-left: 20px;
   margin-bottom: 40px;
   overflow: hidden;
+}
+
+.topbutton {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #ccc;
+  background: #f7f7f7;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  cursor: pointer;
+  color: #333;
+  font-size: 12px;
+  border-radius: 40%;
+}
+
+iframe {
+  border-radius: 20%;
 }

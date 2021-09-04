@@ -1,13 +1,39 @@
 .tutorials{
   &-container{
-    &__titel{
-
+    
+    &__block{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr );
+      grid-gap: 5px;
+      grid-template-areas: "t1 t1 "
+                           "t3 t2 "
+                           "t4 t5"
+                           "t7 t8"
+                           "t8 t8 ";
     }
     &__item{
-      border: 1px solid black;
       margin: 5px;
       padding: 20px ;
       text-align: center;
+    }
+    &__item:hover{
+      transform: scale(0.9);
+      transition: transform 0.8s;
+      box-shadow: 0.4em 0.4em 5px rgba(122,122,122,0.5);
+      background-color:$color-active;
+    }
+    &__titel{
+      font-size: 25px;
+      
+    }
+    &__text{
+      font-family: 'Dancing Script', cursive;
+      font-size: 18px;
+    }
+    &__number{
+      font-size:32px;
+      font-weight: 900;
+      font-family: 'Dancing Script', cursive;
     }
   }
 }
