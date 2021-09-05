@@ -37,3 +37,78 @@
     }
   }
 }
+@media (max-width: 1600px){
+  .tutorials-container__block{
+    gap: 1px;
+  }
+  .tutorials-container__item{
+    padding: 0 0 5px 0;
+  }
+  iframe{
+    width: 500px;
+    height: 300px;
+  }
+}
+@media (max-width: 1235px){
+  .tutorials{
+    margin: 5px 10px;
+  }
+  .tutorials-container__block{
+    display: block;
+  }
+  .tutorials-container__titel{
+    text-align: center;
+  }
+}
+@media (max-width: 992px){
+  .tutorials{
+    margin: 5px 10px;
+  }
+  .tutorials-container__block{
+    display: block;
+  }
+  .tutorials-container__titel{
+    text-align: center;
+  }
+}
+@media (max-width: 992px) and (min-width: 768px){
+  .tutorials{
+    margin: 5px 10px;
+  }
+  .tutorials-container__block{
+    display: block;
+  }
+  .tutorials-container__titel{
+    text-align: center;
+  }
+}
+@media(max-width: 767.8px) and (min-width: 576px){
+  .tutorials{
+    margin: 5px 10px;
+  }
+  .tutorials-container__block{
+    display: block;
+  }
+  .tutorials-container__titel{
+    text-align: center;
+  }
+  iframe{
+    width: 450px;
+    height: 300px;
+  }
+}
+@media (max-width: 575.8px){
+  .tutorials{
+    margin: 5px 10px;
+  }
+  .tutorials-container__block{
+    display: block;
+  }
+  iframe{
+    width: 300px;
+    height: 250px;
+  }
+  .tutorials-container__titel{
+    text-align: center;
+  }
+}

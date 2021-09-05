@@ -59,3 +59,37 @@ background-color: hotpink;
     font-size: 18px;
    font-weight: 400;
   }
+  @media (max-width: 1600px){
+    .stories{
+      max-width: 90%;
+    }
+  }
+  @media (max-width: 992px){
+    .stories{
+      max-width: 90%;
+    }
+  }
+  @media (max-width: 992px) and (min-width: 768px){
+    .stories{
+      max-width: 90%;
+    }
+    .stories-container__image,img{
+      max-width:620px;
+    }
+  }
+  @media(max-width: 767.8px) and (min-width: 576px){
+    .stories{
+      max-width: 90%;
+    }
+    .stories-container__image,img{
+      max-width:450px;
+    }
+  }
+  @media (max-width: 575.8px){
+    .stories{
+      max-width: 90%;
+      }
+      .stories-container__image,img{
+        max-width:400px;
+      }
+  }
