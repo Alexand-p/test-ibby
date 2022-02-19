@@ -1,0 +1,14 @@
+{
+  "name": "savchenko/test-ibby",
+  "description": "description",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Alexandr",
+      "email": "3082303@gmail.com"
+    }
+  ],
+  "require": {
+  }
+}
